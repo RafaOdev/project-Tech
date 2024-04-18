@@ -1,5 +1,5 @@
 header{
-    background-color: var(--white);
+    background-color: rgb(255, 255, 255);
     color: white;
     display: flex;
     align-items: center;
@@ -189,3 +189,4 @@ header .header__userprofile__login a:hover{
     color: var(--red);
     cursor: pointer;
 }
+

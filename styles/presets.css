@@ -138,7 +138,8 @@ table {
     --yellow: #FFD700;
     --red: #FF0000;
     --namePage--font: 'Anton', sans-serif;
-    --box--shadow: 0.063rem 0.063rem 0.625rem 0.063rem rgba(0, 0, 0, 0.2);
+    --box--shadow: 0.063rem 0.063rem 0.625rem 0.063rem rgba(0, 0, 0, 0.7);
+    --grey--principal--section: rgb(223, 223, 223);
 }
 
 body{
