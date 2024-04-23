@@ -2,6 +2,7 @@ const btn__slide__prev = document.querySelector('.prev');
 const btn__slide__next = document.querySelector('.next');
 const slide__item = document.querySelectorAll('.item');
 const slide__content = document.querySelector('.tsn__noticias__principais');
+let slide__iterval;
 
 const itens = {
     element1: slide__item[0],
@@ -29,8 +30,6 @@ for (const key in itens) {
     }
 }
 
-
-
 function slide__next(){
     const items = document.querySelectorAll('.item');
     document.querySelector('.tsn__noticias__principais').appendChild(items[0]);
@@ -41,8 +40,15 @@ function slide__prev(){
     document.querySelector('.tsn__noticias__principais').prepend(items[items.length - 1]);
 }
 
-btn__slide__next.addEventListener('click', slide__next);
-btn__slide__prev.addEventListener('click', slide__prev);
+btn__slide__next.addEventListener('click', () => {
+    clearInterval(slide__iterval);
+    slide__next();
+    slide__iterval = setInterval(slide__next, 10000);
+});
+btn__slide__prev.addEventListener('click', () => {
+    clearInterval(slide__iterval);
+    slide__prev();
+    slide__iterval = setInterval(slide__next, 10000)
+});
 
-setInterval(slide__next, 10000);
-
+slide__iterval = setInterval(slide__next, 10000);

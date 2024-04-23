@@ -3,7 +3,6 @@ section .tsn__noticias__principais .item{
     height: 300px;
     border-radius: 20px;
     position: absolute;
-    box-shadow: 0 10px 20px grey;
     background-position: 50% 50%;
     background-size: cover;
     display: inline-block;
@@ -11,59 +10,73 @@ section .tsn__noticias__principais .item{
     transition: 0.5s;
 }
 
-.tsn__noticias__principais .item:nth-child(1){
-    top: 0;
-    left: 0;    
-    transform: translate(0, 0);
-    border-radius: 10px;
+
+.tsn__noticias__principais .tsn__image{
     width: 100%;
     height: 100%;
 }
 
-.tsn__noticias__principais .item:nth-child(2){
-    left: 60%;
+.tsn__noticias__principais  .tsn__image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
 }
+
+.tsn__noticias__principais .item:nth-child(1){
+    top: 0;
+    left: -30px;    
+    transform: translate(0, 0);
+    border-radius: 10px;
+    width: 105%;
+    height: 100%;
+}
+
+.tsn__noticias__principais .item:nth-child(1) img{
+    filter: brightness(0.60) opacity(0.95);
+}
+
+.tsn__noticias__principais .item:nth-child(2){
+    left: 50%;
+    opacity: 0;
+}
+
+.tsn__noticias__principais .item:nth-child(2) img{
+    width: 100%;
+    height: 100%;
+}
+
 
 .tsn__noticias__principais .item:nth-child(3){
-    left: calc(60% + 220px);
-}
-.tsn__noticias__principais .item:nth-child(4){
-    left: calc(60% + 440px);
-}
-
-.tsn__noticias__principais .item:nth-child(5){
-    left: calc(60% + 540px);
+    left: calc(50% + 220px);
     display: none;
 }
 
+.tsn__noticias__principais .item:nth-child(4){
+    left: calc(50% + 440px);
+    display: none;
+}
+
+
 .tsn__noticias__principais .item:nth-child(2):hover{
-    width: 250px;
-    height: 350px;
-    top: 140px;
-    cursor: pointer;
+    width: 210px;
+    height: 310px;
+    top: 155px;
 }
 
 .tsn__noticias__principais .item:nth-child(3):hover{
-    width: 250px;
-    height: 350px;
-    top: 140px;
+    width: 210px;
+    height: 310px;
+    top: 155px;
     cursor: pointer;
 }
 
 .tsn__noticias__principais .item:nth-child(4):hover{
-    width: 250px;
-    height: 350px;
-    top: 140px;
+    width: 210px;
+    height: 310px;
+    top: 155px;
     cursor: pointer;
 }
-
-.tsn__noticias__principais .item:nth-child(5):hover{
-    width: 250px;
-    height: 350px;
-    top: 140px;
-    cursor: pointer;
-}
-
 
 .tsn__noticias__principais .item:nth-child(1) .content{
     display: inline-block;
@@ -71,73 +84,64 @@ section .tsn__noticias__principais .item{
 
 .tsn__noticias__principais .content{
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
     top: 50%;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
+    width: 55%;
+    height: 40%;
+    border: none;
     text-align: left;
     transform: translate(0, -50%);
     display: none;
-    animation: border__content 0.9s ease-in-out 1 forwards;
 }
-
-.tsn__noticias__principais .content a {
-    color: white;
-    position: relative;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.tsn__noticias__principais .content a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    width: 0%;
-    border-bottom: 3px solid red;
-    transition: width 0.3s ease;
-}
-
-.tsn__noticias__principais .content a:hover::after {
-    width: 100%;
-}
-
 
 .tsn__noticias__principais .content .tsn__title{
     position: absolute;
-    top: 50%;
+    color: white;
+    top: 30%;
     left: 50px;
     font-size: 50px;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 999;
     text-transform: uppercase;
+    border: none;
     font-style: normal;
     animation: tsn__animate 0.9s ease-in-out 1 forwards;
 }
 
+.tsn__noticias__principais .content .tsn__title:hover{
+    text-decoration: underline red;
+}
+
 .tsn__noticias__principais .content .tsn__description{
     position: absolute;
-    top: 60%;
+    color: white;
+    top: 53%;
     font-size: 20px;
     left: 50px;
-    font-weight: 900;
+    font-weight: 500;
     animation: tsn__animate 0.9s ease-in-out 1 forwards;
 }
+
+.tsn__noticias__principais .content .tsn__description:hover{
+    text-decoration: underline red;
+}
+
 
 .tsn__noticias__principais .content .tsn__content__creator{
     position: absolute;
     display: flex;
-    border-top: 1px solid grey;
     padding: 20px;
     top: 70%;
     width: 450px;
     left: 30px;
+    font-weight: 500;
+    animation: border__content 0.10s ease-in-out 1 forwards;
 }
 
+.tsn__noticias__principais .content .tsn__content__creator a{
+    color: white;
+}
 
 .tsn__noticias__principais .content .tsn__creator{
-    
     animation: tsn__animate 0.9s ease-in-out 1 forwards;
 }
 
@@ -154,7 +158,31 @@ section .tsn__noticias__principais .item{
     position: absolute;
     left: 80%;
     animation: tsn__animate 0.9s ease-in-out  1 forwards;
-} 
+}
+
+.tsn__noticias__principais .content .tsn__tag{
+    position: absolute;
+    border-left: 3px solid rgba(255, 55, 55, .8);
+    width: 100px;
+    height: 30px;
+    bottom: 400px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: tsn__animate 0.9s ease-in-out 1 forwards;
+    transition: all 0.5s;
+    -webkit-transition: .3 ease-in-out;
+}
+
+
+.tsn__noticias__principais .content .tsn__tag:hover{
+    background-color: rgba(255, 55, 55);
+}
+
+.tsn__noticias__principais .content .tsn__tag .tag{
+    color: white;
+}
 
 .tsn__noticias__principais span{
     color: white;
@@ -203,6 +231,6 @@ section .tsn__button__principais button{
     }
     to{
         opacity: 1;
-        border-bottom: 1px solid grey;
+        border-top: 1px solid grey;
     }
 }

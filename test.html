@@ -8,15 +8,68 @@
 </head>
 
 <style>
-    .texto-com-borda {
-        border-bottom: 2px solid black; /* Adicione a borda inferio
+    .teste1{
+        width: 700px;
+        height: 600px;
+    }
+
+    .slides{
+        width: 700px;
+        height: 600px;
+        position: absolute;
+    }
+
+    .a1{
+        top: 0;
+        left: 40%;
+    }
+
+    img{
+        width: 700px;
+        height: 600px;
     }
 </style>
 <body>
-    <div class="texto-com-borda">
-        Seu texto com
-        <br>
-        quebra de linha
-      </div>
+    <div class="teste1">
+        
+    </div>
+
+
+    <div class="a1 slides">
+        <img src="/images/chat-gpt.png" alt="">
+    </div>
+
+    <div class="a2 slides">
+        <img src="/images/gta-6-reveal-art-1702900099212.png" alt="">
+    </div>
+
+    <div class="a3 slides">
+        <img src="/images/elden-ring-screenshot-12-en-15jun21.webp" alt="">
+    </div>
+
+
+    <script>
+        const slides = document.querySelectorAll('.slides');
+        const teste1 = document.querySelector('.teste1');
+        let currentIndex = 0;
+        const elements = {
+            element1: slides[0],
+            element2: slides[1],
+            element3: slides[2]
+        }
+        
+        
+        setInterval(() => {
+            const currentSlide = teste1.querySelector('.slides');
+        if (currentSlide) {
+            teste1.removeChild(currentSlide);
+        }
+
+        // Adiciona o próximo slide ao .teste1 e atualiza o índice
+        const nextSlide = slides[currentIndex];
+        teste1.appendChild(nextSlide);
+        currentIndex = (currentIndex + 1) % slides.length;
+        }, 5000);
+    </script>
 </body>
 </html>

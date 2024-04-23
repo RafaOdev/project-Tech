@@ -4,7 +4,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: var(--box--shadow);
     width: 100%;
     height: 80px;
     position: fixed;
@@ -17,21 +16,20 @@ header .header__namepage{
     position: relative;
     text-align: center;
     justify-content: center;
-    background: rgb(255, 55, 55);
     font-size: 30px;
     height: 100%;
     width: 100px;
 }
 
 header .header__namepage:hover{
-    bottom: 0px;
+    bottom: 3px;
     font-size: 35px;
     height: 100%;
 }
 
 header .header__namepage a{
     position: relative;
-    color: var(--white);
+    color: rgb(255, 55, 55);
     font-family: var(--namePage--font);
     top: 30%;
     text-decoration: none;
@@ -72,7 +70,7 @@ header .nav__ a span{
 }
 
 header .nav__ a span:hover{
-    border-bottom: 1px solid red;
+    color: red;
     cursor: pointer;
 }
 
@@ -80,6 +78,17 @@ header .nav__  svg{
     position: relative;
     margin-right: 5px;
     bottom: 12px;
+}
+
+svg{
+    display: inline-block;
+    vertical-align: middle;
+    
+    overflow: hidden;
+    color: white;
+    top: 1px;
+    height: 20px;
+    width: 25px;
 }
 
 header .nav__ .nav__menuprincipal{
@@ -185,7 +194,7 @@ header .header__userprofile__login a{
     transition: color 0.5s;
 }
 
-header .header__userprofile__login a:hover{
+header .header__userprofile__login a span:hover{
     color: var(--red);
     cursor: pointer;
 }
