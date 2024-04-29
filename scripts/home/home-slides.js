@@ -1,54 +1,54 @@
-const btn__slide__prev = document.querySelector('.prev');
-const btn__slide__next = document.querySelector('.next');
-const slide__item = document.querySelectorAll('.item');
-const slide__content = document.querySelector('.tsn__noticias__principais');
-let slide__iterval;
+let next__btn = document.getElementById('next');
+let prev__btn = document.getElementById('prev');
+let slide = document.querySelector('.tsn__main__news__slide');
+let slide__list = document.querySelector('.tsn__main__news__slide .tsn__list');
+let next__slides = document.querySelector('.tsn__main__news__slide .tsn__slides__list');
+let slide__interval;
 
-const itens = {
-    element1: slide__item[0],
-    element2: slide__item[1],
-    element3: slide__item[2],
-    element4: slide__item[3],
+let timeRunning = 1000;
+let runTimeOut;
+
+function showNextSlide(){
+    let itemSlide = document.querySelectorAll('.tsn__main__news__slide .tsn__list .item');
+    let nextItem__slide = document.querySelectorAll('.tsn__main__news__slide .tsn__slides__list .item');
+    slide__list.appendChild(itemSlide[0]);
+    next__slides.appendChild(nextItem__slide[0]);
+    slide.classList.add('next');
+
+    clearTimeout(runTimeOut);
+    runTimeOut = setTimeout(() => {
+        slide.classList.remove('next');
+    }, timeRunning)
+    
 }
 
-function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
+function showPrevSlide(){
+    let itemSlide = document.querySelectorAll('.tsn__main__news__slide .tsn__list .item');
+    let nextItem__slide = document.querySelectorAll('.tsn__main__news__slide .tsn__slides__list .item');
+    let positionLastItem = itemSlide.length - 1;
+    slide__list.prepend(itemSlide[positionLastItem]);
+    next__slides.prepend(nextItem__slide[positionLastItem]);
+    slide.classList.add('prev');
+
+    clearTimeout(runTimeOut);
+    runTimeOut = setTimeout(() => {
+        slide.classList.remove('prev');
+    }, timeRunning)
 }
 
-for (const key in itens) {
-    if (Object.hasOwnProperty.call(itens, key)) {
-        const element = itens[key];
-        element.addEventListener('click', () => {
-            document.querySelector('.tsn__noticias__principais').prepend(element);
-        })
-    }
-}
 
-function slide__next(){
-    const items = document.querySelectorAll('.item');
-    document.querySelector('.tsn__noticias__principais').appendChild(items[0]);
-}
 
-function slide__prev(){
-    const items = document.querySelectorAll('.item');
-    document.querySelector('.tsn__noticias__principais').prepend(items[items.length - 1]);
-}
+next__btn.addEventListener('click', () => {
+    clearInterval(slide__interval);
+    showNextSlide();
+    slide__interval = setInterval(showNextSlide, 10000);
+})
 
-btn__slide__next.addEventListener('click', () => {
-    clearInterval(slide__iterval);
-    slide__next();
-    slide__iterval = setInterval(slide__next, 10000);
-});
-btn__slide__prev.addEventListener('click', () => {
-    clearInterval(slide__iterval);
-    slide__prev();
-    slide__iterval = setInterval(slide__next, 10000)
-});
+prev__btn.addEventListener('click', () => {
+    clearInterval(slide__interval);
+    showPrevSlide();
+    slide__interval = setInterval(showNextSlide, 10000);
+})
 
-slide__iterval = setInterval(slide__next, 10000);
+slide__interval = setInterval(showNextSlide, 10000);
+

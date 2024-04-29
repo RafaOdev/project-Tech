@@ -1,201 +1,192 @@
-header{
-    background-color: rgb(255, 255, 255);
+header {
+    background-color: rgb(0, 0, 0, 0.7);
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 80px;
+    height: 5rem; /* 80px convertido para 5rem */
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000; 
+    z-index: 100;
 }
 
-header .header__namepage{
-    position: relative;
+header .header__namepage {
     text-align: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 1.875rem; /* 30px convertido para 1.875rem */
     height: 100%;
-    width: 100px;
+    width: 6.25rem; /* 100px convertido para 6.25rem */
 }
 
-header .header__namepage:hover{
-    bottom: 3px;
-    font-size: 35px;
+header .header__namepage:hover {
+    bottom: 0.188rem; /* 3px convertido para 0.188rem */
+    font-size: 2.188rem; /* 35px convertido para 2.188rem */
     height: 100%;
 }
 
-header .header__namepage a{
+header .header__namepage a {
     position: relative;
+    top: 30%;
     color: rgb(255, 55, 55);
     font-family: var(--namePage--font);
-    top: 30%;
     text-decoration: none;
     transition: all 0.1s;
 }
 
-header .header__namepage a:hover{
+header .header__namepage a:hover {
     cursor: pointer;
 }
 
-header .nav__{
+header .nav__ {
     display: flex;
-    position: absolute;
     align-items: center;
+    margin-right: 37%;
     width: 50%;
-    top: 20px;
-    left: 110px;
+    top: 1.25rem; /* 20px convertido para 1.25rem */
 }
 
-header .nav__ a{
-    color: var(--black);
+header .nav__ a {
+    color: white;
     text-decoration: none;
     flex-grow: 1;
-    margin: 0 10px;
-    padding: 10px 0;
+    margin: 0 0.625rem; /* 10px convertido para 0.625rem */
+    padding: 0.625rem 0; /* 10px convertido para 0.625rem */
     display: flex;
     justify-content: center;
 }
 
-header .nav__ a i{
-    font-size: 20px;
-    margin-right: 10px;
+header .nav__ a i {
+    font-size: 1.25rem; /* 20px convertido para 1.25rem */
+    margin-right: 0.625rem; /* 10px convertido para 0.625rem */
 }
 
-header .nav__ a span{
-    border-bottom: 1px solid transparent;
+header .nav__ a span {
+    border-bottom: 0.063rem solid transparent; /* 1px convertido para 0.063rem */
     transition: border-bottom 0.5s;
+    color: white;
 }
 
-header .nav__ a span:hover{
-    color: red;
+header .nav__ a span:hover {
+    border-bottom: 1px solid white;
     cursor: pointer;
 }
 
-header .nav__  svg{
-    position: relative;
-    margin-right: 5px;
-    bottom: 12px;
+header .nav__ svg {
+    margin-right: 0.313rem; /* 5px convertido para 0.313rem */
+    bottom: 0.75rem; /* 12px convertido para 0.75rem */
 }
 
-svg{
+svg {
     display: inline-block;
     vertical-align: middle;
-    
     overflow: hidden;
-    color: white;
-    top: 1px;
-    height: 20px;
-    width: 25px;
+    fill: white;
+    top: 0.063rem; /* 1px convertido para 0.063rem */
+    height: 1.25rem; /* 20px convertido para 1.25rem */
+    width: 1.5625rem; /* 25px convertido para 1.5625rem */
 }
 
-header .nav__ .nav__menuprincipal{
+header .nav__ .nav__menuprincipal {
     display: flex;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px convertido para 1.25rem */
     width: 50%;
 }
 
-header .header__search{
+header .header__search {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     background-color: white;
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 200px;
-    height: 37px;
-    right: 130px;
+    border: 0.063rem solid black; /* 1px convertido para 0.063rem */
+    border-radius: 0.625rem; /* 10px convertido para 0.625rem */
+    width: 12.5rem; /* 200px convertido para 12.5rem */
+    height: 2.3125rem; /* 37px convertido para 2.3125rem */
+    right: 8.125rem; /* 130px convertido para 8.125rem */
 }
 
-header .header__search input{
+header .header__search input {
     border: none;
     text-align: center;
     outline: none;
-    position: relative;
-    border-radius: 10px;
-    width: 150px;
-    height: 33px;
-    font-size: 15px;
+    border-radius: 0.625rem; /* 10px convertido para 0.625rem */
+    width: 9.375rem; /* 150px convertido para 9.375rem */
+    height: 2.0625rem; /* 33px convertido para 2.0625rem */
+    font-size: 0.9375rem; /* 15px convertido para 0.9375rem */
 }
 
-header .header__search .header___button{
+header .header__search .header___button {
     display: flex;
-    position: relative;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 0.625rem; /* 10px convertido para 0.625rem */
     height: 100%;
-    width: 50px;
+    width: 3.125rem; /* 50px convertido para 3.125rem */
 }
 
-header .header__search .header__search__button{
+header .header__search .header__search__button {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 0.625rem; /* 10px convertido para 0.625rem */
     border: none;
     background-color: transparent;
 }
 
-header .header__search .header__search__button i{
-    font-size: 15px;
+header .header__search .header__search__button i {
+    font-size: 0.9375rem; /* 15px convertido para 0.9375rem */
     color: var(--black);
 }
 
-header .header__search .header__search__button:hover{
+header .header__search .header__search__button:hover {
     cursor: pointer;
 }
 
-header .header__search .header__search__button:hover i{
+header .header__search .header__search__button:hover i {
     color: var(--red);
 }
 
-header .header__userprofile{
+header .header__userprofile {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     justify-content: space-between;
-    right: 30px;
-    width: 80px;
-    height: 38px;
+    margin-right: 1.875rem; /* 30px convertido para 1.875rem */
+    width: 5rem; /* 80px convertido para 5rem */
+    height: 2.375rem; /* 38px convertido para 2.375rem */
 }
 
-header .header__userprofile__button{
+header .header__userprofile__button {
     background-color: white;
-    border-radius: 9999px;
-    font-size: 25px;
-    width: 40px;
-    height: 38px;
+    border-radius: 6.25rem; /* 9999px convertido para 6.25rem */
+    font-size: 1.5625rem; /* 25px convertido para 1.5625rem */
+    width: 2.5rem; /* 40px convertido para 2.5rem */
+    height: 2.375rem; /* 38px convertido para 2.375rem */
 }
 
-header .header__userprofile__button:hover{
+header .header__userprofile__button:hover {
     background-color: rgb(238, 238, 238);
     cursor: pointer;
 }
 
-header .header__userprofile__button i{
-    position: relative;
-    top: 5px;
+header .header__userprofile__button i {
+    margin-top: 0.532rem; /* 8.5px convertido para 0.532rem */
 }
 
-header .header__userprofile__login{
-    position: relative;
-    font-size: 15px;
-    left: 5px;
+header .header__userprofile__login {
+    font-size: 0.9375rem; /* 15px convertido para 0.9375rem */
+    margin-left: 0.3128rem; /* 5px convertido para 0.3125rem */
+    color: #fff;
 }
 
-
-header .header__userprofile__login a{
-    color: var(--black);
+header .header__userprofile__login a span{
+    color: var(--white);
     transition: color 0.5s;
 }
 
-header .header__userprofile__login a span:hover{
+header .header__userprofile__login a span:hover {
     color: var(--red);
     cursor: pointer;
 }
-

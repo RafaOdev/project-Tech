@@ -1,4 +1,4 @@
-@media (min-width: 280px) and (max-width: 430px){
+@media (min-width: 280px) and (max-width: 678px){
     header{
         display: flex;
         justify-content: center;
@@ -6,7 +6,7 @@
    
     header .nav__{
         display: none;
-   }
+    }
 
    header .header__namepage{
         background-color: transparent;
@@ -19,9 +19,9 @@
     }
 
 
-   header .header__search{
+    header .header__search{
         display: none;
-   }
+    }
 
    header .header__userprofile{
         display: flex;
