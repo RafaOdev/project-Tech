@@ -3,6 +3,8 @@ let prev__btn = document.getElementById('prev');
 let slide = document.querySelector('.tsn__main__news__slide');
 let slide__list = document.querySelector('.tsn__main__news__slide .tsn__list');
 let next__slides = document.querySelector('.tsn__main__news__slide .tsn__slides__list');
+let mainSlide = document.querySelectorAll('.tsn__main__news__slide .tsn__slides__list .item');
+
 let slide__interval;
 
 let timeRunning = 1000;
