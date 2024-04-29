@@ -1,0 +1,496 @@
+.tsn__news__home{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 119.62%;
+    width: 100%;
+    height: 500vh;
+    overflow: hidden;
+}
+
+.tsn__news__home .container{
+    display: flex;
+    position: relative;
+    top: 5px;
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.tsn__news__home .container h2:hover{
+    text-decoration: underline;
+}
+
+/*Section lasted news*/
+
+.tsn__news__home .container .tsn__content__container{
+    width: 60%;
+    height: 60%;
+    display: flex;
+    border-right: 1px solid red;
+}
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day{
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid red;
+    overflow: hidden;
+}
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day h2{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    font-size: 35px;
+    font-family: var(--titleSection--font);
+    text-transform: uppercase;
+}
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day .tsn__news{
+    display: flex;
+    width: 100%;
+    height: 200px;
+}
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day .item1{
+    display: flex;
+    position: relative;
+    top: 150px;
+}
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day .item2{
+    display: flex;
+    position: relative;
+    top: 160px;
+}
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day .item3{
+    display: flex;
+    position: relative;
+    top: 170px;
+}
+
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day .item4{
+    display: flex;
+    position: relative;
+    top: 180px;
+}
+
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day .item5{
+    display: flex;
+    position: relative;
+    top: 190px;
+}
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day .item6{
+    display: flex;
+    position: relative;
+    top: 660px;
+}
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day .item7{
+    display: flex;
+    position: relative;
+    top: 670px;
+}
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day .item8{
+    display: flex;
+    position: relative;
+    top: 680px;
+}
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day .item9{
+    display: flex;
+    position: relative;
+    top: 690px;
+}
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day .item10{
+    display: flex;
+    position: relative;
+    top: 700px;
+}
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day .image{
+    position: relative;
+    background-color: grey;
+    width: 270px;
+    height: 170px;
+    top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day .image img{
+    transition: all 0.5s ease-in-out;
+}
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day .image:hover img{
+    transform: scale(1.1);
+}
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day .image a{
+    width: 100%;
+    height: 100%;
+}
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day .tsn__news__content{
+    position: relative;
+    display: flex;
+    top: 30px;
+    left: 10px;
+    width: 400px;
+    height: 170px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day .tsn__news__content .news__title{
+    position: relative;
+    color: black;
+    width: 90%;
+    height: 30%;
+    bottom: 34.5%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day  .news__title:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day .tag{
+    border-left: 3px solid red;
+    color: black;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 30px;
+    top: 130px;
+    left: 20px;
+}
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day .tag:hover{
+    color: white;
+    background-color: red;
+    transition: background 0.5s;
+}
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day .tsn__news__content .tsn__new__creator{
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 135px;
+    left: 125px;
+}
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day .tsn__news__content .news__desc{
+    position: absolute;
+    color: black;
+    left: 20px;
+    width: 75%;
+}
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day .tsn__news__content .news__desc .desc:hover{
+    cursor: pointer;
+}
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day .tsn__news__content .tsn__new__creator a{
+    color: black;
+    border-bottom: 1px solid red;
+}
+
+.tsn__news__home .container .tsn__content__container .tsn__news__day .tsn__news__content .tsn__new__creator a:hover{
+    border-bottom:  3px solid red;
+}
+
+/*End section lasted news*/
+
+/*Section sidebar reviews*/
+
+.tsn__news__home .container .tsn__sidebar__home{
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews{
+    position: absolute;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    top: 0;
+    border-bottom: 1px solid red;
+}
+
+.tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews h2{
+    position: absolute;
+    top: 50px;
+    left: 95px;
+    font-size: 35px;
+    color: black;
+    font-family: var(--titleSection--font);
+    text-transform: uppercase;
+}
+
+.tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews article{
+    width: 300px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews article:hover img{
+    transform: scale(1.1);
+}
+
+.tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews article a{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews article a img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+.tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews article a .title{
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin: 0px;
+    padding: 24px;
+    min-height: 66px;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #FFF;
+    font-size: 18px;
+    line-height: 1.25;
+    font-weight: 900;
+    letter-spacing: 0.005em;
+}
+
+.tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews article a .title h3{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews article a .title h3:hover{
+    text-decoration: underline white;
+}
+
+
+.tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews .item1{
+    display: flex;
+    position: absolute;
+    top: 6.5%;
+}
+
+.tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews .item2{
+    display: flex;
+    position: absolute;
+    top: 26.5%;
+}
+
+.tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews .item3{
+    position: absolute;
+    top: 61.5%;
+}
+
+
+.tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews .item4{
+    position: absolute;
+    top: 81.2%;
+}
+
+.tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews .tsn__releases{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: 382px;
+    top: 45.2%;
+    border-radius: 10px;
+}
+
+.tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews .tsn__releases .title{
+    position: absolute;
+    top: 20px;
+    font-size: 22px;
+    color: white;
+    font-family: var(--titleSection--font);
+    text-transform: uppercase;
+}
+
+.tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews .tsn__releases .tsn__items{
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews .tsn__releases .tsn__items .tsn__box{
+    width: 90%;
+    height: 51px;
+    border-bottom: 1px solid white;
+}
+
+.tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews .tsn__releases .tsn__items span{
+    color: white;
+}
+
+.tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews .tsn__releases .tsn__items .tsn__box .day{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
+.tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews .tsn__releases .tsn__items .tsn__box .month{
+    position: absolute;
+    font-size: 14px;
+    left: 15px;
+    top: 25px;
+}
+
+.tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews .tsn__releases .tsn__items .tsn__box .tsn__title__game{
+    position: absolute;
+    top: 10px;
+    width: 200px;
+    left: -10px;
+}
+
+.tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews .tsn__releases .tsn__items .tsn__box .tsn__title__game a{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
+.tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews .tsn__releases .tsn__items .tsn__box .tsn__games__plataform{
+    position: absolute;
+    width: 200px;
+    font-size: 14px;
+    top: 25px;
+    left: 20px;
+}
+
+.tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews .tsn__releases .tsn__items .item1{
+    position: absolute;
+    top: 70px;
+}
+
+.tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews .tsn__releases .tsn__items .item2{
+    position: absolute;
+    top: 140px;
+}
+
+/*End section sidebar reviews*/
+
+/*Section games stories*/
+
+.tsn__news__home .container .tsn__stories__box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+    top: 60%;
+}
+
+.tsn__news__home .container .tsn__stories__box .tsn__content__stories{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.tsn__news__home .container .tsn__stories__box .tsn__content__stories .tsn__news__title{
+    position: absolute;
+    top: 70px;
+}
+
+.tsn__news__home .container .tsn__stories__box .tsn__content__stories .tsn__news__title a h2{
+    font-size: 35px;
+    font-family: var(--titleSection--font);
+    text-transform: uppercase;
+}
+
+.tsn__news__home .container .tsn__stories__box .tsn__content__stories .tsn__stories__items{
+    width: 85%;
+    height: 87%;
+}
+
+
+.tsn__news__home .container .tsn__stories__box .tsn__content__stories .tsn__stories__items article{
+    width: 300px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+}

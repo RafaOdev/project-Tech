@@ -1,0 +1,35 @@
+@media (min-width: 280px) and (max-width: 678px){
+    header{
+        display: flex;
+        justify-content: center;
+    }
+   
+    header .nav__{
+        display: none;
+    }
+
+   header .header__namepage{
+        background-color: transparent;
+        position: absolute;
+        left: 33%;
+    }
+
+    header .header__namepage a{
+        color: var(--red);
+    }
+
+
+    header .header__search{
+        display: none;
+    }
+
+   header .header__userprofile{
+        display: flex;
+        position: absolute;
+        left: 10px;
+    }
+
+   header .header__userprofile__login{
+        display: none;
+    }
+}

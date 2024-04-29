@@ -1,0 +1,58 @@
+@media (min-width: 280px) and (max-width: 678px) {
+    main .tsn__main__news__slide{
+        height: 100vh;
+    }
+
+
+    main .tsn__main__news__slide .tsn__list .item .tsn__content{
+        position: absolute;
+        width: 100%;
+        transform: translate(-50%);
+        top: 15%;
+    }
+
+    main .tsn__main__news__slide .tsn__list .item .tsn__content .tsn__tag{
+        height: 20px;
+        font-size: 0.900rem;
+    }
+
+    main .tsn__main__news__slide .tsn__list .item .tsn__content .tsn__title a{
+        font-size: 1.875rem;
+        
+    }
+
+
+    main .tsn__main__news__slide .tsn__list .item .tsn__content .tsn__desc a{
+        position: absolute;
+        font-size: 1.125rem;
+        top: -25px;
+        left: -5px;
+        width: 90%;
+    }
+
+
+    main .tsn__main__news__slide .tsn__list .item .tsn__content .tsn__news__creator {
+        position: absolute;
+        top: 70%;
+    } 
+
+
+    main .tsn__main__news__slide .tsn__list .item .tsn__content .tsn__news__creator .tsn__creator {
+        position: absolute;
+        margin-left: 100px;
+        width: 150px;
+        top: 5px;
+    }
+
+
+    main .tsn__main__news__slide .tsn__list .item .tsn__content .tsn__news__creator .tsn__hour__created {
+        position: absolute;
+        margin-left: 60%;
+        top: 15px;
+    }
+
+    main .tsn__main__news__slide .tsn__slide__btn{
+        position: absolute;
+        left: 55px;
+    }
+}
