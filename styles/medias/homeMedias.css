@@ -1,0 +1,307 @@
+@media screen and (max-width: 430px){
+    /*header*/
+    header .nav__{
+        display: none;
+    }
+
+   header .header__namepage{
+        background-color: transparent;
+        position: absolute;
+        left: 33%;
+    }
+
+    header .header__search{
+        display: none;
+    }
+
+   header .header__userprofile{
+        display: flex;
+        position: absolute;
+        left: 10px;
+    }
+
+   header .header__userprofile__login{
+        display: none;
+    }
+
+
+    /*main news slide*/
+
+    main .tsn__main__news__slide{
+        height: 100vh;
+    }
+
+    main .tsn__main__news__slide .tsn__list .item img{
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        filter: brightness(0.5);
+    }
+
+    main .tsn__main__news__slide .tsn__list .item .tsn__content{
+        width: 100%;
+        background-color: transparent;
+        transform: translate(-50%);
+        top: 20%;
+    }
+
+    main .tsn__main__news__slide .tsn__list .item .tsn__content .tsn__tag{
+        height: 20px;
+        font-size: 0.900rem;
+        margin-left: -35px;
+    }
+    main .tsn__main__news__slide .tsn__list .item .tsn__content .tsn__title{
+        width: 90%;
+        margin-left: -35px;
+    }
+
+    main .tsn__main__news__slide .tsn__list .item .tsn__content .tsn__title a{
+        font-size: 2.475rem;
+    }
+
+    main .tsn__main__news__slide .tsn__list .item .tsn__content .tsn__desc{
+        width: 90%;
+        margin-left: -35px;
+        padding: 20px 0px;
+    }
+
+
+    main .tsn__main__news__slide .tsn__list .item .tsn__content .tsn__desc a{
+        font-size: 0.875rem;
+        line-height: 1rem;
+        width: 90%;
+    }
+
+
+    main .tsn__main__news__slide .tsn__list .item .tsn__content .tsn__news__creator {
+        position: absolute;
+        top: 70%;
+    } 
+
+    main .tsn__main__news__slide .tsn__list .item .tsn__content .tsn__news__creator{
+        margin-top: 10px;
+    }
+
+
+    main .tsn__main__news__slide .tsn__list .item .tsn__content .tsn__news__creator .tsn__creator {
+        position: absolute;
+        margin-left: 100px;
+        width: 150px;
+        top: 5px;
+    }
+
+
+    main .tsn__main__news__slide .tsn__list .item .tsn__content .tsn__news__creator .tsn__hour__created {
+        position: absolute;
+        margin-left: 60%;
+        top: 15px;
+    }
+
+    main .tsn__slides__list{
+        opacity: 0;
+    }
+
+    main .tsn__slides__list .item{
+        width: 100px;
+        height: 100px;
+    }
+
+
+    main .tsn__main__news__slide .tsn__list .item .tsn__content .tsn__news__creator span{
+        font-size: .875rem;
+    }
+
+    main .tsn__main__news__slide .tsn__list .item .tsn__content .tsn__news__creator .tsn__creator{
+        margin-right: 80%;
+        margin-top: 20px;
+    }
+
+    main .tsn__main__news__slide .tsn__list .item .tsn__content .tsn__news__creator .tsn__hour__created{
+        margin-top: 12px;
+        font-size: .687rem;
+    }
+
+
+    /*section lasted news*/
+
+    .tsn__news__home{
+        height: 2000vh;
+    }
+
+    .tsn__news__home .container{
+        width: 100%;
+    }
+
+    .tsn__news__home .container .tsn__content__container{
+        width: 100%;
+        height: 27.40%;
+    }
+
+    .tsn__news__home .container .tsn__content__container .tsn__news__day h2{
+        left: 25%;
+    }
+
+    .tsn__news__home .container .tsn__content__container .tsn__news__day{
+        margin-left: 10%;
+    }
+
+    .tsn__news__home .container .tsn__content__container .tsn__news__day .tsn__news{
+        width: 90%;
+        height: 300px;
+        padding: 40px 0; 
+    }
+
+    .tsn__news__home .container .tsn__content__container .tsn__news__day .image{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        height: 150px;
+    }
+
+
+    .tsn__news__home .container .tsn__content__container .tsn__news__day .tsn__news__content{
+        height: 150px;
+        top: 50%;
+        left: 0;
+    }
+
+    .tsn__news__home .container .tsn__content__container .tsn__news__day .tsn__news__content .news__title{
+        font-size: 1rem;
+        top: -40px;
+        text-align: center;
+    }
+
+    .tsn__news__home .container .tsn__content__container .tsn__news__day .tsn__news__content .news__desc{
+        text-align: center;
+        width: 90%;
+        top: 65px;
+        left: 5%;
+    }
+
+    .tsn__news__home .container .tsn__content__container .tsn__news__day .tsn__news__content .news__desc .desc{
+        font-size: .875rem;
+        text-align: center;
+    }
+
+
+    .tsn__news__home .container .tsn__content__container .tsn__news__day .tag{
+        top: 115px;
+        margin-left: 5%;
+    }
+
+    .tsn__news__home .container .tsn__content__container .tsn__news__day .tsn__news__content .tsn__new__creator{
+        top: 120px;
+        margin-left: 35%;
+    }
+
+    .tsn__news__home .tsn__news__day .tsn__add{
+        top: -1720px;
+        left: 0;
+        width: 88%;
+    }
+
+    /*sidebar review*/
+
+    .tsn__news__home .container .tsn__sidebar__home{
+        position: absolute;
+        height: 190vh;
+        top: 27.40%;
+        width: 100%;
+    }
+
+    .tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews {
+        width: 100%;
+        height: 100%;
+    }
+
+    .tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews h2{
+        top: 30px;
+        left: 40%;
+    }
+
+    .tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews article{
+        height: 220px;
+    }
+
+    .tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews article .image img{
+        height: 150px;
+    }
+
+    .tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews article a .title{
+        background-color: transparent;
+        color: black;
+        top: 150px;
+    }
+
+    .tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews article a .title:hover{
+        color: red;
+    }
+
+    .tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews .item2{
+        top: 21.5%;
+    }
+
+    .tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews .tsn__releases{
+        top: 37.8%;
+    }
+    
+    .tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews .item3{
+        top: 65.5%;
+    }
+    
+    
+    .tsn__news__home .container .tsn__sidebar__home .tsn__list__reviews .item4{
+        top: 84.2%;
+    }
+
+
+    /*section stories*/
+
+    .tsn__news__home .container .tsn__stories__box{
+        top: 36.90%;
+        height: 400vh;
+    }
+
+    .tsn__news__home .container .tsn__stories__box .tsn__content__stories .tsn__news__title a h2{
+        margin-top: -30px;
+    }
+
+    .tsn__news__home .container .tsn__stories__box .tsn__content__stories .tsn__stories__items{
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+        margin-top: 260px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .tsn__news__home .container .tsn__stories__box .tsn__content__stories .tsn__stories__items .tsn__stories2 {
+        margin-top: 550px;
+        margin-left: 0;
+    }
+
+    .tsn__news__home .container .tsn__stories__box .tsn__content__stories .tsn__stories__items .tsn__stories3{
+        margin-left: 0;
+        margin-top: 1110px;
+    }
+
+    .tsn__news__home .container .tsn__stories__box .tsn__content__stories .tsn__stories__items .tsn__stories4{
+        margin-top: 1660px;
+    }
+
+    .tsn__news__home .container .tsn__stories__box .tsn__content__stories .tsn__stories__items .tsn__stories5{
+        margin-left: 0;
+        margin-top: 2200px;
+    }
+
+    .tsn__news__home .container .tsn__stories__box .tsn__content__stories .tsn__stories__items .tsn__stories6{
+        margin-left: 0;
+        margin-top: 2750px;
+    }
+    
+}
+
+
+
+
+

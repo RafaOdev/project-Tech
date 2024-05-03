@@ -4,7 +4,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
     height: 5rem; /* 80px convertido para 5rem */
     position: fixed;
     top: 0;
@@ -15,14 +15,14 @@ header {
 header .header__namepage {
     text-align: center;
     justify-content: center;
-    font-size: 1.875rem; /* 30px convertido para 1.875rem */
+    font-size: 1.575rem; /* 30px convertido para 1.875rem */
     height: 100%;
-    width: 6.25rem; /* 100px convertido para 6.25rem */
+    width: 7.25rem;
 }
 
 header .header__namepage:hover {
     bottom: 0.188rem; /* 3px convertido para 0.188rem */
-    font-size: 2.188rem; /* 35px convertido para 2.188rem */
+    font-size: 1.800rem; /* 35px convertido para 2.188rem */
     height: 100%;
 }
 
